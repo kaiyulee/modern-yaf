@@ -11,7 +11,7 @@ class Weather extends Model
     {
 //        $conn = $this->readServer()->connect();
 
-        $conn = $this->connect([]);
+        $conn = $this->db->connect([]);
         var_dump($conn);
     }
 }

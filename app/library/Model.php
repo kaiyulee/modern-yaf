@@ -7,9 +7,10 @@ use Doctrine\DBAL\DriverManager;
 
 class Model
 {
-    public static $em;
+    private $db;
     private $conn;
     private $db_config;
+    public static $em;
 
     public function __construct()
     {
