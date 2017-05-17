@@ -2,7 +2,49 @@
 
 Use Yaf modern way
 
+*WIP...*
+
 ---
+
+### 目录结构
+
+```
+├── app
+│   ├── controllers
+│   │   ├── Error.php
+│   │   └── Index.php
+│   ├── entities
+│   ├── library
+│   │   ├── Controller.php
+│   │   ├── Model.php
+│   │   └── View.php
+│   ├── models
+│   │   └── Base.php
+│   ├── modules
+│   │   └── Weather
+│   ├── plugins
+│   │   └── tmpl.php
+│   ├── views
+│   │   ├── compiled-cache
+│   │   ├── index
+│   │   └── test
+│   └── Bootstrap.php
+├── conf
+│   ├── application.ini
+│   └── database.ini
+├── database
+├── public
+│   ├── css
+│   ├── img
+│   ├── js
+│   └── index.php
+├── vendor
+│   ├── ...
+│   └── autoload.php
+├── README.md
+├── composer.json
+└── composer.lock
+```
 
 ### 类的加载
 
@@ -49,6 +91,12 @@ class Abc extends Model
     ...
 
 ```
+
+#### VIEW 视图
+
+引入 `Twig` 模板引擎
+
+#### Q & A
 
 >问：如果`module-name/models`下的类与`app/library`下的冲突怎么办？
 
